@@ -9,6 +9,7 @@ public class employeewages
 {
     public static void main( String[] args )
     {
+    	
     	int IS_FULL_TIME=1;
     	int EMP_RATE_HOUR=20;
     	
