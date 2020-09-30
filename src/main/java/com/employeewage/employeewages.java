@@ -9,10 +9,8 @@ public class employeewages
 {
 	public static final int IS_FULL_TIME=2;
 	public static final int IS_PART_TIME=1;
-	public static final int EMP_RATE_HOUR=20;
-	public static final int NUM_DAYS=2;
-	public static final int MAX_HRS=10;
-	public static int computeWage() {
+	
+	public static int computeWage(String company,int EMP_RATE_HOUR, int NUM_DAYS, int MAX_HRS) {
     
     	
     	int empHrs=0;
@@ -38,8 +36,9 @@ public class employeewages
     	System.out.println("Days: " +totalWorkingDays+ " Emp hr:" +empHrs);
     } 
     	totalWage=totalHrs*EMP_RATE_HOUR;
-	System.out.println("Total Emp Wage: " +totalWage);
+	System.out.println("Total Emp Wage for company "+company +" is :" +totalWage);
 	return totalWage;}
     public static void main( String[] args )
-    {computeWage();
+    {computeWage("DMArt",20,2,10 );
+    computeWage("Reliance",10,4,20 );
     	}}
