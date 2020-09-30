@@ -12,10 +12,8 @@ public class employeewages
 	public static final int EMP_RATE_HOUR=20;
 	public static final int NUM_DAYS=2;
 	public static final int MAX_HRS=10;
-	
-    public static void main( String[] args )
-    {
-    	
+	public static int computeWage() {
+    
     	
     	int empHrs=0;
     	int totalHrs=0;
@@ -40,4 +38,8 @@ public class employeewages
     	System.out.println("Days: " +totalWorkingDays+ " Emp hr:" +empHrs);
     } 
     	totalWage=totalHrs*EMP_RATE_HOUR;
-	System.out.println("Total Emp Wage: " +totalWage);}}
+	System.out.println("Total Emp Wage: " +totalWage);
+	return totalWage;}
+    public static void main( String[] args )
+    {computeWage();
+    	}}
